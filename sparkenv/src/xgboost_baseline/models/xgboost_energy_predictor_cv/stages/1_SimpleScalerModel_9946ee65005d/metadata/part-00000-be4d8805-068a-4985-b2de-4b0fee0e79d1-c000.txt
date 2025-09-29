@@ -1,0 +1,1 @@
+{"class":"components.SimpleScalerModel","timestamp":1757958198591,"sparkVersion":"4.0.1","uid":"SimpleScalerModel_9946ee65005d","paramMap":{},"defaultParamMap":{"feature_stats":{"Household_Size":{"mean":3.4813862976462593,"std":1.7086432164317473},"Avg_Temperature_C":{"mean":17.505688515475317,"std":2.4906966069068925}},"inputCols":["Household_Size","Avg_Temperature_C"]}}

@@ -1,0 +1,1 @@
+{"class":"components.CollapseMaskTransform","timestamp":1757955305826,"sparkVersion":"4.0.1","uid":"CollapseMaskTransform_8be2660681bb","paramMap":{},"defaultParamMap":{"inputCols":["Avg_Temperature_C_lag_1","Peak_Hours_Usage_kWh_lag_1","Energy_Consumption_kWh_lag_1","Avg_Temperature_C_lag_2","Peak_Hours_Usage_kWh_lag_2","Energy_Consumption_kWh_lag_2"]}}

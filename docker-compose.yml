@@ -1,0 +1,14 @@
+
+services:
+  sparkenv:
+    build:
+      context: ./sparkenv
+    env_file:
+      - ./.environ/sparkenv.env
+    container_name: sparkenv
+    volumes:
+      - ./sparkenv/src:/app/src
+    working_dir: /app/src
+    tty: true
+    stdin_open: true
+    command: tail -f /dev/null

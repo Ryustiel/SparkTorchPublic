@@ -1,0 +1,20 @@
+[project]
+name = "typechecking"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "boto3>=1.40.40",
+    "kagglehub[pandas-datasets]>=0.3.13",
+    "matplotlib>=3.10.6",
+    "openpyxl>=3.1.5",
+    "pyarrow>=21.0.0",
+    "pyspark>=4.0.1",
+    "python-dotenv>=1.1.1",
+    "scikit-learn>=1.7.2",
+    "seaborn>=0.13.2",
+    "torch>=2.8.0",
+    "torchvision>=0.23.0",
+    "xgboost>=3.0.5",
+]
