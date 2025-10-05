@@ -46,7 +46,7 @@ I chose a hybrid architecture to handle the different types of features:
 2.  A **Feed-Forward Network** processes the static features (`Household_Size`, current day's / forecasted `Avg_Temperature_C`, `Has_AC`).
 3.  The outputs from both are **concatenated** and passed through a final linear layer to produce the prediction.
 
-This approach was an attempt to promote do something a little more efficient than simply passing on the sequence. Additionally, the model uses `torch.nn.utils.rnn.pack_padded_sequence` to ignore unknown time dependent values in the LSTM computation. This is useful for training and infering from early in each household's history where fewer than `sequence_length` data points are available.
+This approach was an attempt to do something a little more efficient than simply passing on the sequence. Additionally, the model uses `torch.nn.utils.rnn.pack_padded_sequence` to ignore unknown time dependent values in the LSTM computation. This is useful for training and infering from early in each household's history where fewer than `sequence_length` data points are available.
 
 *A note on optimality:* While this model is suitable, the primary goal of this project was to explore and implement a robust distributed training workflow with Spark and PyTorch. The architecture could be more in sync with the state of the art or made fancier (like adding attention, more layers), but it serves as a non-trivial example for demonstrating the end-to-end pipeline.
 
@@ -156,3 +156,4 @@ sparkenv/
         ├── infer.py             # Script to load and evaluate the saved XGBoost model
         └── components.py        # Custom Spark ML transformers for the XGBoost pipeline
 ```
+
